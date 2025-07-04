@@ -1,6 +1,6 @@
 start_conversation:
   description: >
-    Based on your profile and the lead , write your initial introduction, including name, company, area of ​​interest and how we can help.  
+    Com base no seu perfil e no lead, escreva sua introdução inicial, incluindo nome, empresa, área de interesse e como podemos ajudar.  
   expected_output: >
-    A friendly greeting of 1 sentences.
+    Uma saudação amigável de 1 frase.
   agent: sdr

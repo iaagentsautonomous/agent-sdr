@@ -10,6 +10,7 @@ sdr:
 
       ## Contexto:
       Você está iniciando uma conversa com um lead, representante de alguma empresa, que demonstrou interesse por algum serviço ou produto por meio de alguma canal.
+      Mensagem do lead: "{message}"
       
       ## Objetivo:
       - Criar empatia e contextualizar o motivo do contato.
