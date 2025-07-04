@@ -1,0 +1,35 @@
+start_conversation:
+  description: >
+    """Start a conversation with {lead_name} from {lead_company}, who has expressed interest in {lead_interest} via {source_channel}.
+    Apresente-se como SDR da IA Agents Autonomous e contextualize brevemente como ajudamos empresas de {company_segment}.'    
+  expected_output: >
+    'Friendly greeting, brief presentation of the company and explanation of the reason for contact."""
+  agent: sdr
+
+discover_dores:
+  description: >
+    'Investigate with open questions what are the main challenges that {lead_company} faces today in relation to manual processes, rework or low productivity.'   
+  expected_output: >
+    'List of pains mentioned by the lead and their perceived causes.'
+  agent: sdr
+
+understand_moment:
+  description: >
+    'Ask if {lead_company} already uses an automation solution. Understand the impact of the pain points and the urgency to resolve these issues.'    
+  expected_output: >
+    'Information on current solutions, impact of pain points and expected time to seek improvements.'
+  agent: sdr
+
+evaluate_decision:
+  description: >
+    'Ask naturally if {lead_name} is involved in the purchasing decision and if there is a planned budget for technological solutions.'    
+  expected_output: >
+    'Lead authority level and information about budget or investment intention.'
+  agent: sdr
+
+forward_or_followup:
+  description: >
+    'Based on the information collected, determine whether {lead_name} should be forwarded to a call with the specialist or placed in future follow-up.'    
+  expected_output: >
+    'Clear recommendation: call with specialist, follow-up later or gentle disqualification.'
+  agent: sdr
