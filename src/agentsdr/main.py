@@ -1,10 +1,19 @@
 #!/usr/bin/env python
 import sys
 import warnings
+import os
+
+from crewai.utilities.paths import db_storage_path
 
 from datetime import datetime
 
 from agentsdr.crew import Agentsdr
+
+
+# Get the base storage path
+storage_path = db_storage_path()
+
+os.environ["CREWAI_STORAGE_DIR"] = storage_path
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
