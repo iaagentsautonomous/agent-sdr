@@ -13,7 +13,9 @@ from agentsdr.crew import Agentsdr
 # Get the base storage path
 storage_path = db_storage_path()
 
-os.environ["CREWAI_STORAGE_DIR"] = storage_path
+os.environ["CREWAI_STORAGE_DIR"] = "./agent-sdr"
+
+print("Path da aplicaçao",storage_path)
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -21,7 +23,7 @@ def run():
     """
     Run the crew.
     """
-    print("Iniciando execução do Crew...")
+    
 
     inputs = {     
         "message": "Ola, quero saber sobre o serviços de voce de automação com IA para processos internos"       
