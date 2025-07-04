@@ -14,12 +14,8 @@ def run():
     """
     print("Iniciando execução do Crew...")
 
-    inputs = {
-        "lead_name": "João Silva",
-        "lead_company": "TechVision",
-        "lead_interest": "Automação com IA para processos internos",
-        "source_channel": "formulário do site",
-        "company_segment": "Farmaceutica"
+    inputs = {     
+        "message": "Ola, quero saber sobre o serviços de voce de automação com IA para processos internos"       
     }
     
     try:
